@@ -1,0 +1,27 @@
+{
+      "compileOnSave": false,
+      "compilerOptions": {
+      
+      "baseUrl": "src",
+      "module": "commonjs",
+      "sourceMap": true,
+      "declaration": false,
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "noImplicitAny": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "target": "es5",
+      "types": [
+        "jest",
+        "mocha",
+        "node",
+        "jasmine",
+        "jasminewd2"        
+      ],
+      "typeRoots": [
+          "node_modules/@types"
+        ],
+
+    }
+  }
