@@ -2,7 +2,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
     allScripsTimeout: 20000,
-    spec: ['/Users/marcos/Documents/my_proyect/protractor_test/src/any_page/test_one-spec.ts '],
+    spec: ['src/any_page/test_one-spec.ts '],
     capabilities: {
         browserName: 'firefox'
     },
