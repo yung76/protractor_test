@@ -4,7 +4,7 @@ import { TestOne } from './test_one';
 describe('First test', () => {
     let page: TestOne;
     beforeEach(() => {
-
+        browser.waitForAngularEnabled(false);
     });
     it('navigate to any page', () => {
         browser.get("http://careers.blizzard.com/es-mx/");
