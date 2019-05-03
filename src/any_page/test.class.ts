@@ -7,8 +7,7 @@ export class TestOne {
         //only for declaration
     }
     navigateTo() {
-        var asd = browser.get("http://careers.blizzard.com/es-mx/");
-        return asd ;
+        return browser.get("http://careers.blizzard.com/es-mx/");
     }
     getsectionName() {
         return this.sectionName.getText();

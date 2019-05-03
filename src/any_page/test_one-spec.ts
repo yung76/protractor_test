@@ -1,18 +1,18 @@
 import {browser} from 'protractor';
-import { TestOne } from './test_one';
+import { TestOne } from './test.class';
 
 describe('First test', () => {
-    let page: TestOne;
+    let page = new TestOne;
     beforeEach(() => {
         browser.waitForAngularEnabled(false);
     });
     it('navigate to any page', () => {
-        browser.get("http://careers.blizzard.com/es-mx/");
+        //browser.get("http://careers.blizzard.com/es-mx/");
 
-        //page.navigateTo();
+        page.navigateTo();
         browser.sleep(5000);    
-        /* page.getsectionName().then(function(text){
+        page.getsectionName().then(function(text){
             console.log(text);
-        }); */
+        });
     });
 });

@@ -15,6 +15,7 @@ exports.config = {
         print: function(){}
     },
     onPrepare() {
+        browser.driver.manage().window().maximize();
         require('ts-node').register({
             project: require('path').join(__dirname, './tsconfig.json')
           });
