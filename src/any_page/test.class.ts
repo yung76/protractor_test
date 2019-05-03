@@ -6,8 +6,8 @@ export class TestOne {
     constructor(){
         //only for declaration
     }
-    navigateTo() {
-        return browser.get("http://careers.blizzard.com/es-mx/");
+    navigateTo(url: string = "") {
+        return browser.get(url);
     }
     getsectionName() {
         return this.sectionName.getText();
