@@ -5,6 +5,8 @@ export class TestOne {
 
     constructor(){
         //only for declaration
+        //it to get a lot element and get one 
+        // element.all(by.xpath("//div[@class='pl-2']")).get(position);
     }
     navigateTo(url: string = "") {
         return browser.get(url);
