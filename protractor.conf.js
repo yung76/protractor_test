@@ -16,6 +16,7 @@ exports.config = {
         print: function(){}
     },
     onPrepare() {
+        browser.manage().timeouts().implicitlyWait(15000);
         browser.driver.manage().window().maximize();
         require('ts-node').register({
             project: require('path').join(__dirname, './tsconfig.json')
